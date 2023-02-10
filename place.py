@@ -1,6 +1,6 @@
 from turtle import *
 import random
-
+imort turtle
 Screen().setup(width=1.0, height=1.0)
 speed(0)
 
@@ -37,3 +37,10 @@ setpos((-64, 5))
 setx(16)
 setpos((0, -7))
 end_fill()
+colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
+t = turtle.Pen()
+for x in range(360):
+    t.pencolor(colors[x%6])
+    t.width(x//100 + 1)
+    t.forward(x)
+    t.left(59)
